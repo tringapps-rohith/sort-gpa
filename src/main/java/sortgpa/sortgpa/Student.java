@@ -81,6 +81,7 @@ class StudentTest
                 ArrayList<StudentGPA> al = new ArrayList<>();
                 for(int i=0;i<n;i++)
                 {
+                        StudentGPA a=s[i];
                         al.add(s[i]);
                 }
                 Collections.sort(al,new Comparator<StudentGPA>()
