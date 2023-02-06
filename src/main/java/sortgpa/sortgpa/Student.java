@@ -82,7 +82,7 @@ class StudentTest
                 for(int i=0;i<n;i++)
                 {
                         StudentGPA a=s[i];
-                        al.add(s[i]);
+                        al.add(a);
                 }
                 Collections.sort(al,new Comparator<StudentGPA>()
                                 {
