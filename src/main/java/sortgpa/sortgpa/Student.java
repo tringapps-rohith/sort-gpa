@@ -78,7 +78,7 @@ class StudentTest
                         l.info(d1);
                 }
 
-                ArrayList<StudentGPA> al = new ArrayList<StudentGPA>();
+                ArrayList<StudentGPA> al = new ArrayList<>();
                 for(int i=0;i<n;i++)
                 {
                         al.add(s[i]);
