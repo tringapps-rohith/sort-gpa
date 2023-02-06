@@ -53,11 +53,12 @@ class StudentTest
 				Logger l=Logger.getLogger("com.api.jar");
                 l.info("Enter the no of students\n");
                 int n=sin.nextInt();
+		int res;
                 StudentGPA [] s=new StudentGPA[n];
                 for(int i=0;i<n;i++)
                 {
-                        int res=i+1;
-                        l.info("\nStudent "+res+" details\n");
+                        res=i+1;
+                        l.log(Level.INFO,()-> "\nStudent "+res+" details\n");
                         s[i]=new StudentGPA();
                         l.info("Enter name :");
                         String name=sin.next();
@@ -71,7 +72,7 @@ class StudentTest
                 }
                 for(int i=0;i<n;i++)
                 {
-                        int res=i+1;
+                         res=i+1;
                         l.log(Level.INFO,()->"\n\nStudent "+res+" details");
                         String d1="\nName :"+s[i].getName()+"\nAge :"+s[i].getAge()+"\nGPA :"+s[i].getGPA();
                         l.info(d1);
@@ -100,9 +101,9 @@ class StudentTest
                 l.info("\nStudents sorted by their GPA");
                 for (int j=0;j<n;j++)
                 {
-					int res=j+1;
+			res=j+1;
                         String s12=" "+al.get(j);
-						l.info(s12);
+			l.info(s12);
                 }
 
         }
